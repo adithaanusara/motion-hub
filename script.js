@@ -63,7 +63,7 @@ const cars = [
     mileage: "5,200 km",
     fuel: "Hybrid",
     type: ["SUV", "Hybrid"],
-    image: "assets/cars/car-05.svg"
+    image: "assets/cars/honda-vezel-2024.png"
   },
   {
     brand: "TOYOTA",
@@ -75,7 +75,7 @@ const cars = [
     mileage: "11,500 km",
     fuel: "Hybrid",
     type: ["Sedan", "Hybrid"],
-    image: "assets/cars/car-06.svg"
+    image: "assets/cars/toyota-prius-2023.png"
   },
   {
     brand: "BMW",
