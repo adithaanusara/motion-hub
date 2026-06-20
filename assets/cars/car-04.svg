@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#4d5561"/><stop offset="1" stop-color="#777"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="24" stdDeviation="18" flood-opacity=".25"/></filter></defs>
+<ellipse cx="600" cy="505" rx="410" ry="52" fill="#000" opacity=".12"/>
+<g filter="url(#s)"><path d="M180 430 C235 330 315 275 440 245 L735 235 C855 245 915 305 1005 420 L1040 456 L1020 500 L170 500 L145 465 Z" fill="url(#g)" stroke="#3b3b3b" stroke-width="8"/>
+<path d="M385 270 C460 210 550 195 720 205 C785 210 845 255 890 335 L335 335 Z" fill="#26313b" opacity=".92"/>
+<path d="M430 272 L520 218 L600 218 L600 330 L360 330 Z" fill="#9fb0bd" opacity=".55"/><path d="M625 218 L720 220 C780 225 820 260 858 330 L625 330 Z" fill="#9fb0bd" opacity=".5"/>
+<circle cx="345" cy="470" r="78" fill="#202226"/><circle cx="345" cy="470" r="42" fill="#c6c8ca"/><circle cx="850" cy="470" r="78" fill="#202226"/><circle cx="850" cy="470" r="42" fill="#c6c8ca"/>
+<path d="M170 430 L295 395" stroke="#fff" stroke-width="15" opacity=".8"/><path d="M910 398 L1005 420" stroke="#d62929" stroke-width="12"/><rect x="130" y="452" width="140" height="34" rx="15" fill="#1a1a1a"/><rect x="900" y="450" width="135" height="32" rx="15" fill="#1a1a1a"/>
+</g><text x="600" y="585" text-anchor="middle" font-family="Arial" font-weight="700" font-size="30" fill="#777">AUDI Q3 — REPLACE WITH YOUR PNG</text></svg>

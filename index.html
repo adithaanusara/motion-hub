@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Velocity Motors — premium vehicle sales website." />
+  <title>Velocity Motors | Premium Car Sales</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-loader" id="pageLoader"><span></span></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="Velocity Motors home">
+      <span class="brand-mark">V</span>
+      <span><strong>VELOCITY</strong><small>MOTORS</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#inventory">Inventory</a>
+      <a href="#services">Services</a>
+      <a href="#finance">Finance</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="header-cta" href="#contact">Book a Test Drive</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-label="Featured vehicles">
+      <div class="hero-progress" aria-hidden="true"><span id="heroProgressBar"></span></div>
+      <div class="hero-bg-word" id="heroBgWord">C-HR</div>
+
+      <div class="hero-copy">
+        <div class="eyebrow"><span id="heroBrand">TOYOTA</span><span class="slide-count"><b id="currentSlide">01</b> / <span id="totalSlides">10</span></span></div>
+        <h1 id="heroTitle">2024 C-HR</h1>
+        <p id="heroTagline">Bold design. Reliable performance. Built for every journey.</p>
+
+        <div class="hero-stats">
+          <div><span>PRICE</span><strong id="heroPrice">LKR 18.9M</strong></div>
+          <div><span>YEAR</span><strong id="heroYear">2024</strong></div>
+          <div><span>MILEAGE</span><strong id="heroMileage">8,500 km</strong></div>
+          <div><span>FUEL</span><strong id="heroFuel">Hybrid</strong></div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Request Price</a>
+          <a class="btn btn-ghost" href="#inventory">View Details</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="car-stage" id="carStage">
+          <div class="car-glow"></div>
+          <img
+  id="heroCarImage"
+  src="assets/cars/toyota-chr.png"
+  alt="Toyota C-HR"
+/>
+          <span class="hotspot hotspot-one" title="Premium LED headlights">+</span>
+          <span class="hotspot hotspot-two" title="Sport alloy wheels">+</span>
+        </div>
+      </div>
+
+      <div class="hero-side-card">
+        <img id="sideCarImage" src="assets/cars/car-02.svg" alt="Next vehicle preview" />
+        <span>NEXT</span>
+        <strong id="sideCarName">BMW 320i</strong>
+      </div>
+
+      <button class="slider-arrow arrow-left" id="prevCar" aria-label="Previous vehicle">←</button>
+      <button class="slider-arrow arrow-right" id="nextCar" aria-label="Next vehicle">→</button>
+
+      <div class="hero-thumbs" id="heroThumbs" aria-label="Vehicle selector"></div>
+    </section>
+
+    <section class="section inventory-section" id="inventory">
+      <div class="section-heading reveal">
+        <div><span class="kicker">OUR COLLECTION</span><h2>Featured vehicles</h2></div>
+        <p>Carefully selected vehicles with transparent details, flexible financing, and trusted after-sales support.</p>
+      </div>
+      <div class="filter-row reveal" id="filterRow">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="SUV">SUV</button>
+        <button class="filter" data-filter="Sedan">Sedan</button>
+        <button class="filter" data-filter="Luxury">Luxury</button>
+        <button class="filter" data-filter="Hybrid">Hybrid</button>
+      </div>
+      <div class="inventory-grid" id="inventoryGrid"></div>
+      <div class="center reveal"><button class="btn btn-dark" id="showAllCars">Show All Vehicles</button></div>
+    </section>
+
+    <section class="split-feature" id="about">
+      <div class="split-image reveal-left">
+        <div class="image-card">
+          <img src="assets/cars/showroom.svg" alt="Modern car showroom" />
+          <div class="experience-badge"><strong>12+</strong><span>Years of trusted service</span></div>
+        </div>
+      </div>
+      <div class="split-copy reveal-right">
+        <span class="kicker">WHY CHOOSE US</span>
+        <h2>Your next car, with complete confidence.</h2>
+        <p>From inspection to registration, our team makes every step simple. Every listed vehicle is checked before delivery and supported by clear documentation.</p>
+        <div class="benefit-list">
+          <article><b>01</b><div><h3>Verified Vehicles</h3><p>Multi-point inspection and clear history details.</p></div></article>
+          <article><b>02</b><div><h3>Flexible Finance</h3><p>Solutions designed around your monthly budget.</p></div></article>
+          <article><b>03</b><div><h3>Islandwide Support</h3><p>Delivery and customer assistance across Sri Lanka.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="section-heading reveal">
+        <div><span class="kicker">MORE THAN A CAR SALE</span><h2>Everything you need</h2></div>
+      </div>
+      <div class="service-grid">
+        <article class="service-card reveal"><span>01</span><h3>Vehicle Sourcing</h3><p>Tell us your preferred model, year, colour, and budget. We will help source the right vehicle.</p><a href="#contact">Learn more →</a></article>
+        <article class="service-card reveal"><span>02</span><h3>Trade-In</h3><p>Upgrade easily by receiving a fair valuation for your current vehicle.</p><a href="#contact">Get a valuation →</a></article>
+        <article class="service-card reveal"><span>03</span><h3>After-Sales Care</h3><p>Maintenance guidance, spare-parts support, and reliable customer assistance.</p><a href="#contact">Explore support →</a></article>
+      </div>
+    </section>
+
+    <section class="finance-banner" id="finance">
+      <div class="finance-copy reveal-left">
+        <span class="kicker light">EASY FINANCE</span>
+        <h2>Drive now. Pay your way.</h2>
+        <p>Get an estimated monthly payment and speak with our finance team for a personalized plan.</p>
+        <div class="calculator">
+          <label>Vehicle price<input id="calcPrice" type="number" min="1000000" step="100000" value="12000000"></label>
+          <label>Down payment<input id="calcDown" type="number" min="0" step="100000" value="3000000"></label>
+          <label>Loan period<select id="calcYears"><option value="3">3 years</option><option value="5" selected>5 years</option><option value="7">7 years</option></select></label>
+          <div class="estimate"><span>Estimated monthly</span><strong id="monthlyEstimate">LKR 191,000</strong></div>
+        </div>
+      </div>
+      <div class="finance-art reveal-right"><img src="assets/cars/car-07.svg" alt="Luxury vehicle finance" /></div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-info reveal-left">
+        <span class="kicker">LET'S TALK</span>
+        <h2>Find your perfect vehicle.</h2>
+        <p>Send your requirements and our team will contact you with availability, pricing, and finance options.</p>
+        <div class="contact-list">
+          <a href="tel:+94770000000"><span>CALL</span>+94 77 000 0000</a>
+          <a href="mailto:sales@velocitymotors.lk"><span>EMAIL</span>sales@velocitymotors.lk</a>
+          <p><span>VISIT</span>Colombo, Sri Lanka</p>
+        </div>
+      </div>
+      <form class="contact-form reveal-right" id="contactForm">
+        <div class="form-row"><label>Name<input required name="name" placeholder="Your name"></label><label>Phone<input required name="phone" placeholder="07X XXX XXXX"></label></div>
+        <label>Email<input type="email" name="email" placeholder="you@example.com"></label>
+        <label>Interested vehicle<select name="vehicle" id="vehicleSelect"></select></label>
+        <label>Message<textarea name="message" rows="5" placeholder="Tell us what you are looking for..."></textarea></label>
+        <button class="btn btn-primary" type="submit">Send Inquiry</button>
+        <p class="form-message" id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">V</span><span><strong>VELOCITY</strong><small>MOTORS</small></span></a>
+    <p>Premium vehicles. Trusted service. Better journeys.</p>
+    <div><a href="#inventory">Inventory</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
+    <small>© <span id="yearNow"></span> Velocity Motors. All rights reserved.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
