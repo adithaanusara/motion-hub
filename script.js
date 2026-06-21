@@ -87,7 +87,7 @@ const cars = [
     mileage: "21,300 km",
     fuel: "Diesel",
     type: ["SUV", "Luxury"],
-    image: "assets/cars/car-07.svg"
+    image: "assets/cars/bmw-x5-2022.png"
   },
   {
     brand: "SUZUKI",
@@ -99,7 +99,7 @@ const cars = [
     mileage: "2,900 km",
     fuel: "Petrol",
     type: ["Sedan"],
-    image: "assets/cars/car-08.svg"
+    image: "assets/cars/suzuki-swift-2024.png"
   },
   {
     brand: "NISSAN",
@@ -111,7 +111,7 @@ const cars = [
     mileage: "13,700 km",
     fuel: "Hybrid",
     type: ["SUV", "Hybrid"],
-    image: "assets/cars/car-09.svg"
+    image: "assets/cars/nissan-xtrail-2023.png"
   },
   {
     brand: "LAND ROVER",
@@ -123,7 +123,7 @@ const cars = [
     mileage: "17,900 km",
     fuel: "Diesel",
     type: ["SUV", "Luxury"],
-    image: "assets/cars/car-10.svg"
+    image: "assets/cars/land-rover-evoque-2022.png"
   }
 ];
 
@@ -162,6 +162,17 @@ function updateHero(newIndex, direction = 1) {
   const car = cars[index];
   const nextCar = cars[(index + 1) % cars.length];
   const stage = $("#carStage");
+
+  const heroBrand = $("#heroBrand");
+const heroTopYear = $("#heroTopYear");
+
+if (heroBrand) {
+  heroBrand.textContent = car.brand;
+}
+
+if (heroTopYear) {
+  heroTopYear.textContent = car.year;
+}
 
   if (!stage) return;
 

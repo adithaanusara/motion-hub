@@ -10,3 +10,100 @@ footer{padding:50px 7vw;background:#111;color:#fff;display:grid;grid-template-co
 .reveal,.reveal-left,.reveal-right{opacity:0;transition:.8s ease}.reveal{transform:translateY(28px)}.reveal-left{transform:translateX(-35px)}.reveal-right{transform:translateX(35px)}.revealed{opacity:1;transform:none}
 @media(max-width:1100px){.main-nav{display:none}.hero{grid-template-columns:1fr 1.5fr;padding-left:5vw;padding-right:5vw}.hero-side-card{display:none}.inventory-grid{grid-template-columns:repeat(2,1fr)}.split-feature{grid-template-columns:1fr}.split-image{min-height:560px}.finance-banner{grid-template-columns:1fr}.finance-art{min-height:420px}.contact-section{grid-template-columns:1fr}.menu-toggle{display:block}.main-nav.open{display:flex;position:absolute;top:72px;left:0;right:0;background:#fff;flex-direction:column;padding:25px 7vw;border-bottom:1px solid #eee}.header-cta{display:none}}
 @media(max-width:760px){.site-header{height:70px;padding:0 18px}.brand strong{font-size:12px}.hero-progress{top:70px}.hero{display:block;min-height:auto;padding:110px 20px 115px}.hero-bg-word{top:46%;left:0;font-size:43vw;opacity:.14}.hero-copy{position:relative;z-index:5}.hero h1{font-size:48px}.hero-copy>p{font-size:14px}.hero-stats{grid-template-columns:repeat(2,1fr);margin:25px 0}.hero-visual{margin:15px -35px -5px}.car-stage{min-height:330px}.car-stage img{width:112%}.hotspot{width:34px;height:34px}.hero-thumbs{bottom:20px;left:20px;right:20px;transform:none;max-width:none}.slider-arrow{bottom:74px}.arrow-left{right:74px}.arrow-right{right:20px}.section{padding:80px 20px}.section-heading{display:block}.inventory-grid{grid-template-columns:1fr}.vehicle-media{height:230px}.split-image{padding:20px;min-height:430px}.split-copy{padding:70px 20px}.service-grid{grid-template-columns:1fr}.finance-copy{padding:80px 20px}.calculator{grid-template-columns:1fr}.finance-art{min-height:320px}.contact-section{gap:35px}.form-row{grid-template-columns:1fr}footer{grid-template-columns:1fr;text-align:left}footer>div{text-align:left}footer>div a{margin:0 18px 0 0}.hero-actions .btn{padding:14px 17px;font-size:12px}}
+
+/* ===== TOP BRAND + YEAR EXACT POSITION ===== */
+.hero {
+  position: relative;
+}
+
+.hero-top-info {
+  position: absolute;
+  inset: 0;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.hero-top-brand {
+  position: absolute;
+  top: 175px;
+  left: 110px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #111111;
+  line-height: 1;
+}
+
+.hero-top-year {
+  position: absolute;
+  top: 175px;
+  left: 995px;   /* meka oyata poddak adjust karanna puluwan */
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #111111;
+  line-height: 1;
+}
+@media (max-width: 1440px) {
+  .hero-top-brand {
+    top: 160px;
+    left: 90px;
+    font-size: 24px;
+  }
+
+  .hero-top-year {
+    top: 160px;
+    left: 860px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-top-brand {
+    top: 145px;
+    left: 70px;
+    font-size: 22px;
+  }
+
+  .hero-top-year {
+    top: 145px;
+    left: 720px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-top-brand {
+    top: 120px;
+    left: 40px;
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+
+  .hero-top-year {
+    top: 120px;
+    left: auto;
+    right: 50px;
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-top-brand {
+    top: 100px;
+    left: 24px;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .hero-top-year {
+    top: 100px;
+    right: 24px;
+    left: auto;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+}
